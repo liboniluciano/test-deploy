@@ -1,0 +1,1 @@
+web: yarn knex migrate:latest --env production
