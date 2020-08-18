@@ -7,9 +7,8 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-  origin: "https://marvel-quiz.vercel.app/*"
+  origin: 'https://marvel-quiz.vercel.app/'
 }));
-
 app.use(express.json());
 app.use(routes);
 
