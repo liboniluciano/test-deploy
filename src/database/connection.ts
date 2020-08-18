@@ -1,8 +1,10 @@
 import knex from 'knex';
 
+let db = {};
+
 (async () => {
   try {
-    const db = knex({
+    db = knex({
       client: 'pg',
       connection: {
         host: process.env.DATABASE_URL,
