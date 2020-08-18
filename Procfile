@@ -1,1 +1,1 @@
-web: yarn knex migrate:latest --env production
+web: yarn knex migrate:rollback && yarn knex migrate:latest --env production && yarn start
